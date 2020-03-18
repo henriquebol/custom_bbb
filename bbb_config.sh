@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG = "/logs/servidor.log"
+log = '/logs/servidor.log'
 
 echo "$(date +%F\ %T) - Iniciando configuração..." >> $LOG
 cd ~/
