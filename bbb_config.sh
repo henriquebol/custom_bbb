@@ -1,10 +1,16 @@
 #!/bin/bash
 
+# wget -O - https://raw.githubusercontent.com/henriquebol/custom_bbb/master/bbb_config.sh | sudo bash
+
 readonly LOG=~/logs/config.log
 
 echo '$(date +%F\ %T) - Iniciando configuração...' >> $LOG
 cd ~/
 mkdir -p ~/logs
+
+# Fazendo backups
+sudo cp  /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties.bck
+sudo cp /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml.bck
 
 # Slide Default
 echo '$(date +%F\ %T) - Baixando Slide default...' >> $LOG
