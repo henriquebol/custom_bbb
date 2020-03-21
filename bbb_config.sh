@@ -73,6 +73,10 @@ echo '$(date +%F\ %T) - Barra do Título - OK' >> $LOG
 echo '$(date +%F\ %T) - Áudio em pt-BR...' >> $LOG
 echo '$(date +%F\ %T) - Áudio em pt-BR - OK' >> $LOG
 
+# Firewall
+echo '$(date +%F\ %T) - Configurando Firewall...' >> $LOG
+echo '$(date +%F\ %T) - Firewall - OK' >> $LOG
+
 # Restart
 echo '$(date +%F\ %T) - Configuração finalizada' >> $LOG
 echo '$(date +%F\ %T) - Reiniciando serviço...' >> $LOG
