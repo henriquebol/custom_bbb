@@ -75,7 +75,8 @@ sudo scp -rp suporte@bbb6.virtual.ufc.br:/opt/freeswitch/share/freeswitch/sounds
 cd /opt/freeswitch/share/freeswitch/sounds
 sudo mv en en.old
 sudo mv /home/suporte/en/ en/
-sudo chown -R root:daemon en/
+sudo chown -R freeswitch:daemon en/
+sudo chmod -R 755 en/
 echo '$(date +%F\ %T) - Áudio em pt-BR - OK' >> $LOG
 
 # Firewall
