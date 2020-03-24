@@ -6,8 +6,8 @@ cd ~/
 mkdir cron
 cd ~/cron
 
-sudo wget -O - https://raw.githubusercontent.com/henriquebol/custom_bbb/master/cron.daily/bbb-recording-cleanup  bbb-recording-cleanup
-sudo wget -O - https://raw.githubusercontent.com/henriquebol/custom_bbb/master/cron.daily/bigbluebutton  bigbluebutton
+sudo wget -O - https://raw.githubusercontent.com/henriquebol/custom_bbb/master/cron.daily/bbb-recording-cleanup -O bbb-recording-cleanup
+sudo wget -O - https://raw.githubusercontent.com/henriquebol/custom_bbb/master/cron.daily/bigbluebutton -O bigbluebutton
 
 sudo cp bbb-recording-cleanup /etc/cron.daily/
 sudo cp bigbluebutton /etc/cron.daily/
