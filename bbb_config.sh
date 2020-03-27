@@ -35,7 +35,7 @@ echo '$(date +%F\ %T) - Alterando bigbluebutton.properties...' >> $LOG
 sudo sed -i -e "s/\(attendeesJoinViaHTML5Client=\).*/\1true/" \
 -e "s/\(moderatorsJoinViaHTML5Client=\).*/\1true/" \
 -e "s/\(bigbluebutton.web.logoutURL=\).*/\1 https:\/\/goo.gl\/forms\/PEB4WFixcWwuGyOt1/" \
--e "s/\(disableRecordingDefault=\).*/\1true/" \
+#-e "s/\(disableRecordingDefault=\).*/\1true/" \
 -e "s/\(defaultWelcomeMessageFooter=\).*/\1<br>/" /usr/share/bbb-web/WEB-INF/classes/bigbluebutton.properties
 echo '$(date +%F\ %T) - Html5 default - OK' >> $LOG
 echo '$(date +%F\ %T) - defaultWelcomeMessageFooter - OK' >> $LOG
