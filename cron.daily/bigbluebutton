@@ -25,10 +25,10 @@ test -x /var/bigbluebutton || exit 0
 #
 # How N days back to keep files
 #
-history=3
-unrecorded_days=10
-published_days=10
-log_history=25
+history=5
+unrecorded_days=14
+published_days=14
+log_history=28
 
 #
 # Delete presentations older than N days
