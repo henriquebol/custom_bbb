@@ -2,7 +2,7 @@
 
 # /etc/cron.daily/bbb-recording-cleanup
 
-MAXAGE=15
+MAXAGE=30
 
 LOGFILE=/var/log/bigbluebutton/bbb-recording-cleanup.log
 
