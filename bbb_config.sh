@@ -43,7 +43,7 @@ echo '$(date +%F\ %T) - defaultWelcomeMessageFooter - OK' >> $LOG
 echo '$(date +%F\ %T) - Alterando settings.yml...' >> $LOG
 sudo sed -i -e "s/\(clientTitle:\).*/\1 Solar Webconferência/" \
 -e "s/\(copyright:\).*/\1 'Solar webconferência - ©2019 BigBlueButton Inc.'/" \
--e "s/\(helpLink:\).*/\1 http:\/\/solar.virtual.ufc.br\/webconferences?request_support=true/" /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+-e "s/\(helpLink:\).*/\1 https:\/\/webconferencia.virtual.ufc.br\/b\/pau-waw-gh2" /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 echo '$(date +%F\ %T) - clientTitle - OK' >> $LOG
 echo '$(date +%F\ %T) - copyright - OK' >> $LOG
 echo '$(date +%F\ %T) - helpLink - OK' >> $LOG
