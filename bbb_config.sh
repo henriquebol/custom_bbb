@@ -70,7 +70,7 @@ echo '$(date +%F\ %T) - Barra do Título - OK' >> $LOG
 
 # Aúdio em pt_BR
 echo '$(date +%F\ %T) - Áudio em pt-BR...' >> $LOG
-sudo scp -rp -P 965 suporte@bbb6.virtual.ufc.br:/opt/freeswitch/share/freeswitch/sounds/en /home/suporte/
+sudo scp -rp -P 965 suporte@bbb3.virtual.ufc.br:/opt/freeswitch/share/freeswitch/sounds/en /home/suporte/
 cd /opt/freeswitch/share/freeswitch/sounds
 sudo mv en en.old
 sudo mv /home/suporte/en/ en/
