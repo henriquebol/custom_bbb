@@ -43,7 +43,7 @@ echo '$(date +%F\ %T) - defaultWelcomeMessageFooter - OK' >> $LOG
 echo '$(date +%F\ %T) - Alterando settings.yml...' >> $LOG
 sudo sed -i -e "s/\(clientTitle:\).*/\1 Solar Webconferência/" \
 -e "s/\(copyright:\).*/\1 'Solar webconferência - ©2019 BigBlueButton Inc.'/" \
--e "s/\(helpLink:\).*/\1 https:\/\/webconferencia.virtual.ufc.br\/b\/pau-waw-gh2" /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
+-e "s/\(helpLink:\).*/\1 https:\/\/webconferencia.virtual.ufc.br\/b\/" /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml
 echo '$(date +%F\ %T) - clientTitle - OK' >> $LOG
 echo '$(date +%F\ %T) - copyright - OK' >> $LOG
 echo '$(date +%F\ %T) - helpLink - OK' >> $LOG
@@ -70,10 +70,10 @@ echo '$(date +%F\ %T) - Barra do Título - OK' >> $LOG
 
 # Aúdio em pt_BR
 echo '$(date +%F\ %T) - Áudio em pt-BR...' >> $LOG
-sudo scp -rp suporte@bbb3.virtual.ufc.br:/opt/freeswitch/share/freeswitch/sounds/en /home/suporte/
+sudo scp -rp user@server:/opt/freeswitch/share/freeswitch/sounds/en /home/user/
 cd /opt/freeswitch/share/freeswitch/sounds
 sudo mv en en.old
-sudo mv /home/suporte/en/ en/
+sudo mv /home/user/en/ en/
 sudo chown -R freeswitch:daemon en/
 sudo chmod -R 755 en/
 echo '$(date +%F\ %T) - Áudio em pt-BR - OK' >> $LOG
